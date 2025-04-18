@@ -1,0 +1,140 @@
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  background: "#f0f0f0";
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #333;
+  font-size: 0.875rem;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.clickAwayListener {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.dropDownPage {
+  display: flex;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+.dropDownPage .dropDownContainer {
+  margin: auto;
+}
+.dropDownPage .dropDownContainer .dropDownBox {
+  position: relative;
+  width: 50rem;
+}
+.dropDownPage .dropDownContainer .dropDownBox .dropDownField {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  background-color: #fff;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  overflow: hidden;
+}
+.dropDownPage .dropDownContainer .dropDownBox .dropDownField .dropDownFieldContent {
+  display: flex;
+  align-items: center;
+}
+.dropDownPage .dropDownContainer .dropDownBox .dropDownField .dropDownFieldContent .selectedItemsList {
+  display: flex;
+  align-items: center;
+}
+.dropDownPage .dropDownContainer .dropDownBox .dropDownField .dropDownFieldContent .selectedItemsList .selectedItem {
+  display: flex;
+  align-items: center;
+  margin-right: 0.5rem;
+  padding: 0.25rem 0.7rem;
+  border-radius: 0.8rem;
+  background-color: #DDE6ED;
+}
+.dropDownPage .dropDownContainer .dropDownBox .dropDownField .dropDownFieldContent .selectedItemsList .selectedItem span {
+  min-width: 4rem;
+  margin-right: 0.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.dropDownPage .dropDownContainer .dropDownBox .dropDownField .dropDownFieldContent .selectedItemsList .selectedItem .removeItemBtn {
+  padding-top: 0.2rem;
+}
+.dropDownPage .dropDownContainer .dropDownBox .dropDownField .dropDownFieldContent .selectedItemsList .selectedItem .removeItemBtn .MuiSvgIcon-root {
+  font-size: 1rem;
+}
+.dropDownPage .dropDownContainer .dropDownBox .dropDownField .dropDownFieldContent .newItemField {
+  min-width: 50rem;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+}
+.dropDownPage .dropDownContainer .dropDownBox .dropDownField .arrow {
+  position: absolute;
+  inset: 0;
+  margin: auto 1rem auto auto;
+  font-size: 2rem;
+}
+.dropDownPage .dropDownContainer .dropDownBox .dropDownList {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  max-height: 20rem;
+  margin: 0;
+  margin-top: 6rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 1.5rem;
+  background-color: #fff;
+  overflow: auto;
+}
+.dropDownPage .dropDownContainer .dropDownBox .dropDownList .dropDownListItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.dropDownPage .dropDownContainer .dropDownBox .dropDownList .dropDownListItem .check {
+  color: #007bff;
+}
+.dropDownPage .dropDownContainer .dropDownBox .dropDownList .dropDownListItem:hover {
+  background-color: #EEF1FF;
+  color: #007bff;
+}/*# sourceMappingURL=globals.css.map */
